@@ -15,7 +15,7 @@ import java.util.Properties;
 public class PropertiesFile {
     public static void readPropertiesFile() throws IOException {
         Properties prop = new Properties();
-        InputStream input = new FileInputStream("C:\\Users\\BRITENET\\Downloads\\gs-accessing-data-mysql-master\\HealthServiceTesting\\src\\test\\java\\Tests\\test.properties");
+        InputStream input = new FileInputStream("\\src\\test\\java\\Tests\\test.properties");
         prop.load(input);
         HealthServiceHomePageTest.url=prop.getProperty("URL");
         DoctorListTest.url= prop.getProperty("URL");
@@ -38,4 +38,5 @@ public class PropertiesFile {
     }*/
 }
 
+//comment
 
