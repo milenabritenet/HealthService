@@ -12,7 +12,6 @@ public static String url;
     @Test
     public void HealthServiceTest() throws IOException {
         PropertiesFile.readPropertiesFile();
-
         driver.get(url);
         String expectedTitle = "Health Service";
         System.out.println(driver.getTitle());

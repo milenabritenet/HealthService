@@ -1,5 +1,6 @@
 package utils;
 
+import Tests.DoctorListTest;
 import Tests.HealthServiceHomePageTest;
 import org.apache.commons.configuration2.Configuration;
 import org.apache.commons.configuration2.builder.fluent.Configurations;
@@ -17,6 +18,7 @@ public class PropertiesFile {
         InputStream input = new FileInputStream("C:\\Users\\BRITENET\\Downloads\\gs-accessing-data-mysql-master\\HealthServiceTesting\\src\\test\\java\\Tests\\test.properties");
         prop.load(input);
         HealthServiceHomePageTest.url=prop.getProperty("URL");
+        DoctorListTest.url= prop.getProperty("URL");
     }
 
 /*
