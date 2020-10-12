@@ -15,7 +15,8 @@ public abstract class BaseSeleniumTest {
         System.setProperty("webdriver.chrome.driver", driverPath);
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("http://localhost:8080/");
+       /* driver.get("http://localhost:8080/");
+*/
 
     }
 
@@ -26,4 +27,3 @@ public abstract class BaseSeleniumTest {
         driver.quit();
     }
 }
-///comment
