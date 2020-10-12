@@ -21,7 +21,7 @@ public abstract class BaseSeleniumTest {
     @AfterMethod
     public void teardown() throws InterruptedException {
         System.out.println("Ending the Test");
-        Thread.sleep(5000);
+        Thread.sleep(3000);
         driver.quit();
     }
 }
